@@ -69,16 +69,13 @@ document.getElementById("content").onwheel = function(){
         activeDrop = "";
     }
 
-    let hiddenMenu = document.getElementById("hidden-menu-drpd");
+    hiddenMenuCloser();
+}
 
-    if(hiddenMenu.style.display === "block"){
+//when user touch the screen on page content (except nav and left menu)
+document.getElementById("content").ontouchstart = function(){
 
-        //get actual user vertical scroll position without actual height of hidden menu
-        let newPos = window.scrollY - hiddenMenu.offsetHeight;
-
-        hiddenMenu.style.display = "none";
-        window.scrollTo(0, newPos);
-    }
+    hiddenMenuCloser();
 }
 
 //show relevant content
@@ -126,5 +123,21 @@ function hideDropdowns(){
 
         dropdowns[i].firstElementChild.classList.replace("fa-caret-up", "fa-caret-down");
         dropdownsCon[i].style.display = "none";
+    }
+}
+
+//close the hidden menu and change the user's vertical position
+//if the menu is open
+function hiddenMenuCloser(){
+
+    let hiddenMenu = document.getElementById("hidden-menu-drpd");
+
+    if(hiddenMenu.style.display === "block"){
+
+        //get actual user vertical scroll position without actual height of hidden menu
+        let newPos = window.scrollY - hiddenMenu.offsetHeight;
+
+        hiddenMenu.style.display = "none";
+        window.scrollTo(0, newPos);
     }
 }
