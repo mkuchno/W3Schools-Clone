@@ -1,0 +1,932 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>W3Schools Online Web Tutorials</title>
+
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+    
+    <body>
+        
+        <!-- logo and login button above the navigation menu -->
+
+        <div id="page-top">
+            <ul>
+                <li><a href="index.html" id="logo">w3schools<span>.com</span></a></li>
+                <li>
+                    <span>
+                        <span>
+                            T H E &nbsp; W O R L D ' S &nbsp; L A R G E S T &nbsp; W E B &nbsp; D E V E L O P E R &nbsp; S I T E
+                        </span>
+                        <button id="login-btn">LOG IN</button>
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- navigation menu -->
+
+        <div id="nav">
+            <ul class="left">
+                <li id="hidden-menu"><a href="#!"><span class="fas fa-bars"></span></a></li>
+                <li><a class="hidden-drpd" href="#!">T U T O R I A L S &nbsp; <span class="fas fa-caret-down"></span></a></li>
+                <li><a class="hidden-drpd" href="#!">R E F E R E N C E S &nbsp; <span class="fas fa-caret-down"></span></a></li>
+                <li><a class="hidden-drpd" href="#!">E X A M P L E S &nbsp; <span class="fas fa-caret-down"></span></a></li>
+                <li><a class="hidden-drpd" href="#!">E X E R C I S E S &nbsp; <span class="fas fa-caret-down"></span></a></li>
+                <li><a href="#">C E R T I F I C A T E S</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#!" id="change-theme" class="fa fa-adjust" title="Toggle Dark Code"></a></li>
+                <li><a href="#!" class="fas fa-globe-americas" title="Translate W3Schools"></a></li>
+                <li><a href="#!" class="fas fa-search" title="Search W3Schools"></a></li>
+            </ul>
+        </div>
+
+        <!-- login form -->
+
+        <div id="login-form">
+            <div>
+                <h2>LOG IN</h2>
+                <p style="text-align: center;"><a href="#">Why Log In?</a></p>
+                <form>
+                    <label>Username</label><br/>
+                    <input type="email" placeholder="Enter your e-mail address"><br/>
+                    <label>Password</label><br/>
+                    <input type="password" placeholder="Enter your password"><br/>
+                    <button type="button">LOG IN</button>
+                </form>
+                <p>New User? <a href="#">Sign Up For Free!</a></p>
+                <p><a href="#">Forgot password?</a></p>
+            </div>
+            <p id="close-form"><span>+</span></p>
+        </div>
+
+        <!-- contents for dropdown positions in navigation menu -->
+
+        <div id="tutorials-drpd" class="menu-drpd">
+            <ul>
+                <li class="list-title"><h4>HTML and CSS</h4></li>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn Bootstrap</li>
+                <li>Learn W3.CSS</li>
+                <li>Learn Colors</li>
+                <li>Learn Icons</li>
+                <li>Learn Graphics</li>
+                <li>Learn SVG</li>
+                <li>Learn Canvas</li>
+                <li>Learn How To</li>
+                <li>Learn Sass</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>JavaScript</h4></li>
+                <li>Learn JavaScript</li>
+                <li>Learn jQuery</li>
+                <li>Learn React</li>
+                <li>Learn AngularJS</li>
+                <li>Learn JSON</li>
+                <li>Learn AJAX</li>
+                <li>Learn AppML</li>
+                <li>Learn W3.JS</li>
+
+                <li class="list-title"><h4>Programming</h4></li>
+                <li>Learn Python</li>
+                <li>Learn Java</li>
+                <li>Learn C++</li>
+                <li>Learn C#</li>
+                <li>Learn Machine Learning</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>Server Side</h4></li>
+                <li>Learn SQL</li>
+                <li>Learn PHP</li>
+                <li>Learn ASP</li>
+                <li>Learn Node.js</li>
+                <li>Learn Raspberry Pi</li>
+
+                <li class="list-title"><h4>Web Building</h4></li>
+                <li>Web Templates</li>
+                <li>Web Statistics</li>
+                <li>Web Certificates</li>
+                <li>Web Editor</li>
+                <li>Web Development</li>
+                <li>Test Your Typing Speed</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>XML Tutorials</h4></li>
+                <li>Learn XML</li>
+                <li>Learn XML AJAX</li>
+                <li>Learn XML DOM</li>
+                <li>Learn XML DTD</li>
+                <li>Learn XML Schema</li>
+                <li>Learn XSLT</li>
+                <li>Learn XPath</li>
+                <li>Learn XQuery</li>
+            </ul>
+            <p class="close-drpd"><span>+</span></p>
+        </div>
+
+        <div id="references-drpd" class="menu-drpd">
+            <ul>
+                <li class="list-title"><h4>HTML</h4></li>
+                <li>HTML Tag Reference</li>
+                <li>HTML Browser Support</li>
+                <li>HTML Event Reference</li>
+                <li>HTML Color Reference</li>
+                <li>HTML Attribute Reference</li>
+                <li>HTML Canvas Reference</li>
+                <li>HTML SVG Reference</li>
+                <li>Google Maps Reference</li>
+                
+                <li class="list-title"><h4>CSS</h4></li>
+                <li>CSS Reference</li>
+                <li>CSS Browser Support</li>
+                <li>CSS Selector Reference</li>
+                <li>Bootstrap 3 Reference</li>
+                <li>Bootstrap 4 Reference</li>
+                <li>W3.CSS Reference</li>
+                <li>Icon Reference</li>
+                <li>Sass Reference</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>JavaScript</h4></li>
+                <li>JavaScript Reference</li>
+                <li>HTML DOM Reference</li>
+                <li>jQuery Reference</li>
+                <li>AngularJS Reference</li>
+                <li>AppML Reference</li>
+                <li>W3.JS Reference</li>
+
+                <li class="list-title"><h4>Programming</h4></li>
+                <li>Python Reference</li>
+                <li>Java Reference</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>Server Side</h4></li>
+                <li>SQL Reference</li>
+                <li>PHP Reference</li>
+                <li>ASP Reference</li>
+
+                <li class="list-title"><h4>XML</h4></li>
+                <li>XML DOM Reference</li>
+                <li>XML Http Reference</li>
+                <li>XSLT Reference</li>
+                <li>XML Schema Reference</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>Character Sets</h4></li>
+                <li>HTML Character Sets</li>
+                <li>HTML ASCII</li>
+                <li>HTML ANSI</li>
+                <li>HTML Windows-1252</li>
+                <li>HTML ISO-8859-1</li>
+                <li>HTML Symbols</li>
+                <li>HTML UTF-8</li>
+            </ul>
+            <p class="close-drpd"><span>+</span></p>
+        </div>
+
+        <div id="examples-drpd" class="menu-drpd">
+            <ul>
+                <li class="list-title"><h4>HTML and CSS</h4></li>
+                <li>HTML Examples</li>
+                <li>W3.CSS Examples</li>
+                <li>Bootstrap Examples</li>
+                <li>How To Examples</li>
+                <li>SVG Examples</li>
+                <li>Web Examples</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>JavaScript</h4></li>
+                <li>JavaScript Examples</li>
+                <li>HTML DOM Examples</li>
+                <li>jQuery Examples</li>
+                <li>AngularJS Examples</li>
+                <li>AJAX Examples</li>
+                <li>W3.JS Examples</li>
+
+                <li class="list-title"><h4>Programming</h4></li>
+                <li>Python Examples</li>
+                <li>Java Examples</li>
+                <li>C++ Examples</li>
+                <li>C# Examples</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>Server Side</h4></li>
+                <li>SQL Examples</li>
+                <li>PHP Examples</li>
+                <li>ASP Examples</li>
+
+                <li class="list-title"><h4>XML</h4></li>
+                <li>XML Examples</li>
+                <li>XSLT Examples</li>
+                <li>XPath Examples</li>
+                <li>XML Schema Examples</li>
+                <li>AJAX Examples</li>
+                <li>SVG Examples</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>Quizzes</h4></li>
+                <li>HTML Quiz</li>
+                <li>CSS Quiz</li>
+                <li>JavaScript Quiz</li>
+                <li>SQL Quiz</li>
+                <li>PHP Quiz</li>
+                <li>Python Quiz</li>
+                <li>jQuery Quiz</li>
+                <li>Bootstrap Quiz</li>
+                <li>Java Quiz</li>
+                <li>C++ Quiz</li>
+                <li>C# Quiz</li>
+                <li>XML Quiz</li>
+            </ul>
+            <p class="close-drpd"><span>+</span></p>
+        </div>
+        
+        <div id="exercises-drpd" class="menu-drpd">
+            <ul>
+                <li class="list-title"><h4>Exercises</h4></li>
+                <li>HTML Exercises</li>
+                <li>CSS Exercises</li>
+                <li>JavaScript Exercises</li>
+                <li>SQL Exercises</li>
+                <li>PHP Exercises</li>
+                <li>Python Exercises</li>
+                <li>jQuery Exercises</li>
+                <li>Java Exercises</li>
+                <li>Bootstrap Exercises</li>
+                <li>C++ Exercises</li>
+                <li>C# Exercises</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>Quizzes</h4></li>
+                <li>HTML Quiz</li>
+                <li>CSS Quiz</li>
+                <li>JavaScript Quiz</li>
+                <li>SQL Quiz</li>
+                <li>PHP Quiz</li>
+                <li>Python Quiz</li>
+                <li>jQuery Quiz</li>
+                <li>Bootstrap Quiz</li>
+                <li>Java Quiz</li>
+                <li>C++ Quiz</li>
+                <li>C# Quiz</li>
+                <li>XML Quiz</li>
+            </ul>
+            <ul>
+                <li class="list-title"><h4>Certificates</h4></li>
+                <li>Certificate</li>
+                <li>CSS Certificate</li>
+                <li>JavaScript Certificate</li>
+                <li>SQL Certificate</li>
+                <li>PHP Certificate</li>
+                <li>Python Certificate</li>
+                <li>Bootstrap Certificate</li>
+                <li>jQuery Certificate</li>
+                <li>XML Certificate</li>
+            </ul>
+            <p class="close-drpd"><span>+</span></p>
+        </div>
+
+        <!-- content for hidden menu (small screens) position in navigation menu -->
+
+        <div id="hidden-menu-drpd">
+            
+            <h2>T U T O R I A L S &nbsp; <span class="fas fa-caret-down"></span></h2>
+            <div>
+                <ul>
+                    <li class="list-title"><h4>HTML and CSS</h4></li>
+                    <li>Learn HTML</li>
+                    <li>Learn CSS</li>
+                    <li>Learn Bootstrap</li>
+                    <li>Learn W3.CSS</li>
+                    <li>Learn Colors</li>
+                    <li>Learn Icons</li>
+                    <li>Learn Graphics</li>
+                    <li>Learn SVG</li>
+                    <li>Learn Canvas</li>
+                    <li>Learn How To</li>
+                    <li>Learn Sass</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>JavaScript</h4></li>
+                    <li>Learn JavaScript</li>
+                    <li>Learn jQuery</li>
+                    <li>Learn React</li>
+                    <li>Learn AngularJS</li>
+                    <li>Learn JSON</li>
+                    <li>Learn AJAX</li>
+                    <li>Learn AppML</li>
+                    <li>Learn W3.JS</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Programming</h4></li>
+                    <li>Learn Python</li>
+                    <li>Learn Java</li>
+                    <li>Learn C++</li>
+                    <li>Learn C#</li>
+                    <li>Learn Machine Learning</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Server Side</h4></li>
+                    <li>Learn SQL</li>
+                    <li>Learn PHP</li>
+                    <li>Learn ASP</li>
+                    <li>Learn Node.js</li>
+                    <li>Learn Raspberry Pi</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Web Building</h4></li>
+                    <li>Web Templates</li>
+                    <li>Web Statistics</li>
+                    <li>Web Certificates</li>
+                    <li>Web Editor</li>
+                    <li>Web Development</li>
+                    <li>Test Your Typing Speed</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>XML Tutorials</h4></li>
+                    <li>Learn XML</li>
+                    <li>Learn XML AJAX</li>
+                    <li>Learn XML DOM</li>
+                    <li>Learn XML DTD</li>
+                    <li>Learn XML Schema</li>
+                    <li>Learn XSLT</li>
+                    <li>Learn XPath</li>
+                    <li>Learn XQuery</li>
+                </ul>
+            </div>
+
+            <h2>R E F E R E N C E S &nbsp; <span class="fas fa-caret-down"></span></h2>
+            <div>
+                <ul>
+                    <li class="list-title"><h4>HTML</h4></li>
+                    <li>HTML Tag Reference</li>
+                    <li>HTML Browser Support</li>
+                    <li>HTML Event Reference</li>
+                    <li>HTML Color Reference</li>
+                    <li>HTML Attribute Reference</li>
+                    <li>HTML Canvas Reference</li>
+                    <li>HTML SVG Reference</li>
+                    <li>Google Maps Reference</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>CSS</h4></li>
+                    <li>CSS Reference</li>
+                    <li>CSS Browser Support</li>
+                    <li>CSS Selector Reference</li>
+                    <li>Bootstrap 3 Reference</li>
+                    <li>Bootstrap 4 Reference</li>
+                    <li>W3.CSS Reference</li>
+                    <li>Icon Reference</li>
+                    <li>Sass Reference</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>JavaScript</h4></li>
+                    <li>JavaScript Reference</li>
+                    <li>HTML DOM Reference</li>
+                    <li>jQuery Reference</li>
+                    <li>AngularJS Reference</li>
+                    <li>AppML Reference</li>
+                    <li>W3.JS Reference</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Programming</h4></li>
+                    <li>Python Reference</li>
+                    <li>Java Reference</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Server Side</h4></li>
+                    <li>SQL Reference</li>
+                    <li>PHP Reference</li>
+                    <li>ASP Reference</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>XML</h4></li>
+                    <li>XML DOM Reference</li>
+                    <li>XML Http Reference</li>
+                    <li>XSLT Reference</li>
+                    <li>XML Schema Reference</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Character Sets</h4></li>
+                    <li>HTML Character Sets</li>
+                    <li>HTML ASCII</li>
+                    <li>HTML ANSI</li>
+                    <li>HTML Windows-1252</li>
+                    <li>HTML ISO-8859-1</li>
+                    <li>HTML Symbols</li>
+                    <li>HTML UTF-8</li>
+                </ul>
+            </div>
+
+            <h2>E X A M P L E S &nbsp; <span class="fas fa-caret-down"></span></h2>
+            <div>
+                <ul>
+                    <li class="list-title"><h4>HTML and CSS</h4></li>
+                    <li>HTML Examples</li>
+                    <li>W3.CSS Examples</li>
+                    <li>Bootstrap Examples</li>
+                    <li>How To Examples</li>
+                    <li>SVG Examples</li>
+                    <li>Web Examples</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>JavaScript</h4></li>
+                    <li>JavaScript Examples</li>
+                    <li>HTML DOM Examples</li>
+                    <li>jQuery Examples</li>
+                    <li>AngularJS Examples</li>
+                    <li>AJAX Examples</li>
+                    <li>W3.JS Examples</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Programming</h4></li>
+                    <li>Python Examples</li>
+                    <li>Java Examples</li>
+                    <li>C++ Examples</li>
+                    <li>C# Examples</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Server Side</h4></li>
+                    <li>SQL Examples</li>
+                    <li>PHP Examples</li>
+                    <li>ASP Examples</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>XML</h4></li>
+                    <li>XML Examples</li>
+                    <li>XSLT Examples</li>
+                    <li>XPath Examples</li>
+                    <li>XML Schema Examples</li>
+                    <li>AJAX Examples</li>
+                    <li>SVG Examples</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Quizzes</h4></li>
+                    <li>HTML Quiz</li>
+                    <li>CSS Quiz</li>
+                    <li>JavaScript Quiz</li>
+                    <li>SQL Quiz</li>
+                    <li>PHP Quiz</li>
+                    <li>Python Quiz</li>
+                    <li>jQuery Quiz</li>
+                    <li>Bootstrap Quiz</li>
+                    <li>Java Quiz</li>
+                    <li>C++ Quiz</li>
+                    <li>C# Quiz</li>
+                    <li>XML Quiz</li>
+                </ul>
+            </div>
+
+            <h2>E X E R C I S E S &nbsp; <span class="fas fa-caret-down"></span></h2>
+            <div>
+                <ul>
+                    <li class="list-title"><h4>Exercises</h4></li>
+                    <li>HTML Exercises</li>
+                    <li>CSS Exercises</li>
+                    <li>JavaScript Exercises</li>
+                    <li>SQL Exercises</li>
+                    <li>PHP Exercises</li>
+                    <li>Python Exercises</li>
+                    <li>jQuery Exercises</li>
+                    <li>Java Exercises</li>
+                    <li>Bootstrap Exercises</li>
+                    <li>C++ Exercises</li>
+                    <li>C# Exercises</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Quizzes</h4></li>
+                    <li>HTML Quiz</li>
+                    <li>CSS Quiz</li>
+                    <li>JavaScript Quiz</li>
+                    <li>SQL Quiz</li>
+                    <li>PHP Quiz</li>
+                    <li>Python Quiz</li>
+                    <li>jQuery Quiz</li>
+                    <li>Bootstrap Quiz</li>
+                    <li>Java Quiz</li>
+                    <li>C++ Quiz</li>
+                    <li>C# Quiz</li>
+                    <li>XML Quiz</li>
+                </ul>
+                <ul>
+                    <li class="list-title"><h4>Certificates</h4></li>
+                    <li>Certificate</li>
+                    <li>CSS Certificate</li>
+                    <li>JavaScript Certificate</li>
+                    <li>SQL Certificate</li>
+                    <li>PHP Certificate</li>
+                    <li>Python Certificate</li>
+                    <li>Bootstrap Certificate</li>
+                    <li>jQuery Certificate</li>
+                    <li>XML Certificate</li>
+                </ul>
+            </div>
+
+            <h2>C E R T I F I C A T E S</h2>
+            <h2>S H O P</h2>
+            <p id="close-menu"><span>+</span></p>
+            
+        </div>
+        
+        <!-- div for menu left and page content -->
+
+        <div style="position: relative;">
+
+            <div id="menu-left">
+                <ul>
+                    <li class="list-title"><h4>HTML and CSS</h4></li>
+                    <li>Learn HTML</li>
+                    <li>Learn CSS</li>
+                    <li>Learn Bootstrap</li>
+                    <li>Learn W3.CSS</li>
+                    <li>Learn Colors</li>
+                    <li>Learn Icons</li>
+                    <li>Learn Graphics</li>
+                    <li>Learn How To</li>
+                    <li>Learn Sass</li>
+
+                    <li class="list-title"><h4>JavaScript</h4></li>
+                    <li>Learn JavaScript</li>
+                    <li>Learn jQuery</li>
+                    <li>Learn React</li>
+                    <li>Learn AngularJS</li>
+                    <li>Learn JSON</li>
+                    <li>Learn AJAX</li>
+                    <li>Learn AppML</li>
+                    <li>Learn W3.JS</li>
+
+                    <li class="list-title"><h4>Server Side</h4></li>
+                    <li>Learn SQL</li>
+                    <li>Learn PHP</li>
+                    <li>Learn ASP</li>
+                    <li>Learn Node.js</li>
+                    <li>Learn Raspberry Pi</li>
+
+                    <li class="list-title"><h4>Programming</h4></li>
+                    <li>Learn Python</li>
+                    <li>Learn Java</li>
+                    <li>Learn C++</li>
+                    <li>Learn C#</li>
+                    <li>Learn Machine Learning</li>
+
+                    <li class="list-title"><h4>Web Building</h4></li>
+                    <li>Web Templates</li>
+                    <li>Web Statistics</li>
+                    <li>Web Certificates</li>
+                    <li>Web Editor</li>
+                    <li>Web Development</li>
+                    <li>Test Your Typing Speed</li>
+
+                    <li class="list-title"><h4>XML Tutorials</h4></li>
+                    <li>Learn XML</li>
+                    <li>Learn XML AJAX</li>
+                    <li>Learn XML DOM</li>
+                    <li>Learn XML DTD</li>
+                    <li>Learn XML Schema</li>
+                    <li>Learn XSLT</li>
+                    <li>Learn XPath</li>
+                    <li>Learn XQuery</li>
+
+                    <li class="list-title"><h4>References</h4></li>
+                    <li>HTML Reference</li>
+                    <li>CSS Reference</li>
+                    <li>JS Reference</li>
+                    <li>SQL Reference</li>
+                    <li>PHP Reference</li>
+                    <li>jQuery Reference</li>
+                    <li>Python Reference</li>
+                    <li>Bootstrap 3 Reference</li>
+                    <li>Bootstrap 4 Reference</li>
+                    <li>W3.CSS Reference</li>
+                    <li>Java Reference</li>
+                    <li>Angular Reference</li>
+                    <li>Sass Reference</li>
+                    <li>UTF-8 Reference</li>
+
+                    <li class="list-title"><h4>Exercise</h4></li>
+                    <li>HTML Exercises</li>
+                    <li>CSS Exercises</li>
+                    <li>JavaScript Exercises</li>
+                    <li>SQL Exercises</li>
+                    <li>PHP Exercises</li>
+                    <li>Python Exercises</li>
+                    <li>Java Exercises</li>
+                    <li>C++ Exercises</li>
+                    <li>C# Exercises</li>
+                    <li>Bootstrap Exercises</li>
+                </ul>
+            </div>
+
+            <!-- main page content -->
+
+            <div id="content">
+
+                <ul id="languages-intro">
+                    <li id="el-1" class="desc">
+                        <h2>HTML</h2>
+                        <p>The language for building web pages</p>
+                        <button class="normal-btn">LEARN HTML</button>
+                        <button class="normal-btn">HTML REFERENCE</button>
+                    </li>
+                    <li id="el-2">
+                        <div class="example">
+                            <h4>HTML Example:</h4>
+                            <p class="var-theme">
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">!DOCTYPE</span> <span class="txt-red">html</span><span class="txt-blue">&gt;</span><br/>
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">html</span><span class="txt-blue">&gt;</span><br/>
+
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">title</span><span class="txt-blue">&gt;</span>HTML
+                                Tutorial<span class="txt-blue">&lt;</span><span class="txt-brown">/title</span><span class="txt-blue">&gt;</span><br/>
+
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">body</span><span class="txt-blue">&gt;</span><br/>
+                                <br/>
+
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">h1</span><span class="txt-blue">&gt;</span>This is a
+                                heading<span class="txt-blue">&lt;</span><span class="txt-brown">/h1</span><span class="txt-blue">&gt;</span><br/>
+
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">p</span><span class="txt-blue">&gt;</span>This is a 
+                                paragraph.<span class="txt-blue">&lt;</span><span class="txt-brown">/p</span><span class="txt-blue">&gt;</span><br/>
+                                <br/>
+
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">/body</span><span class="txt-blue">&gt;</span><br/>
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">/html</span><span class="txt-blue">&gt;</span><br/>
+                            </p>
+                            <button class="shadow-btn">Try it Yourself <span class="fa fa-angle-double-right"></span></button>
+                        </div>
+                    </li>
+                    
+                    <li id="el-3" style="background-color: rgb(233, 230, 230);">
+                        <h4>CSS Example:</h4>
+                        <p class="example var-theme">
+                            <span class="txt-brown">body</span> { <br/>
+                                &emsp; <span class="txt-red">background-color: </span><span class="txt-blue">lightblue</span>;<br/>
+                            } <br/>
+                            <br/> 
+                            <span class="txt-brown">h1</span> { <br/>
+                                &emsp; <span class="txt-red">color: </span><span class="txt-blue">white</span>;<br/>
+                                &emsp; <span class="txt-red">text-align: </span><span class="txt-blue">center</span>;<br/>
+                            } <br/>
+                            <br/>
+                            <span class="txt-brown">p</span> { <br/>
+                                &emsp; <span class="txt-red">font-family: </span><span class="txt-blue">verdana</span>;<br/>
+                                &emsp; <span class="txt-red">font-size: </span><span class="txt-blue">20px</span>;<br/>
+                            } <br/>
+                        </p>
+                        <button class="shadow-btn">Try it Yourself <span class="fa fa-angle-double-right"></span></button>
+                    </li>
+                    <li id="el-4" class="desc" style="background-color: rgb(233, 230, 230);">
+                        <h2>CSS</h2>
+                        <p>The language for styling web pages</p>
+                        <button class="normal-btn">LEARN CSS</button>
+                        <button class="normal-btn">CSS REFERENCE</button>
+                    </li>
+
+                    <li id="el-5" class="desc">
+                        <h2>JavaScript</h2>
+                        <p>The language for programming web <br/>pages</p>
+                        <button class="normal-btn">LEARN JAVASCRIPT</button>
+                        <button class="normal-btn">JAVASCRIPT REFERENCE</button>
+                    </li>
+                    <li id="el-6">
+                        <div class="example">
+                            <h4>JavaScript Example:</h4>
+                            <p class="var-theme">
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">button</span>
+                                <span class="txt-red">onclick</span><span class="txt-blue">="myFunction()"&gt;</span><br/>
+                                    &emsp; Click Me!<br/>
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">/button</span><span class="txt-blue">&gt;</span><br/>
+                                <br/>
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">script</span><span class="txt-blue">&gt;</span><br/>
+                                <span class="txt-blue">function</span> myFunction() { <br/>
+                                    &emsp; <span class="txt-blue">var</span> x = document.getElementById(<span class="txt-brown">"demo"</span>);<br/>
+                                    &emsp; x.style.fontSize = <span class="txt-brown">"25px"</span>;<br/>
+                                    &emsp; x.style.color = <span class="txt-brown">"red"</span>;<br/>
+                                } <br/>
+                                <span class="txt-blue">&lt;</span><span class="txt-brown">/script</span><span class="txt-blue">&gt;</span><br/>
+                            </p>
+                            <button class="shadow-btn">Try it Yourself <span class="fa fa-angle-double-right"></span></button>
+                        </div>
+                    </li>
+
+                    <li id="el-7" style="background-color: rgb(233, 230, 230);">
+                        <h4>SQL Example:</h4>
+                        <p class="example var-theme">
+                            <span class="txt-blue">SELECT</span> * <span class="txt-blue">FROM</span> Customers<br/>
+                            <span class="txt-blue">WHERE</span> Country = <span class="txt-brown">'Mexico'</span>;<br/>
+                            <br/><br/><br/><br/>
+                        </p>
+                        <button class="shadow-btn">Try it Yourself <span class="fa fa-angle-double-right"></span></button>
+                    </li>
+                    <li id="el-8" class="desc" style="background-color: rgb(233, 230, 230);">
+                        <h2>SQL</h2>
+                        <p>A language for accessing databases</p>
+                        <button class="normal-btn">LEARN SQL</button>
+                        <button class="normal-btn">SQL REFERENCE</button>
+                    </li>
+                </ul>
+
+                <!-- .......... -->
+
+                <ul id="programming-intro">
+                    <li>
+                        <h2>Python</h2>
+                        <p>A programming language</p>
+                        <button class="normal-btn">LEARN PYTHON</button>
+                    </li>
+                    <li>
+                        <h2>PHP</h2>
+                        <p>A web server programming language</p>
+                        <button class="normal-btn">LEARN PHP</button>
+                    </li>
+                    <li>
+                        <h2>jQuery</h2>
+                        <p>A JavaScript library for developing web pages</p>
+                        <button class="normal-btn">LEARN JQUERY</button>
+                    </li>
+                    <li>
+                        <h2>Java</h2>
+                        <p>A programming language</p>
+                        <button class="normal-btn">LEARN JAVA</button>
+                    </li>
+                </ul>
+
+                <!-- .......... -->
+
+                <ul id="frameworks-intro">
+                    <li>
+                        <h2>W3.CSS</h2>
+                        <p>A modern CSS framework for faster and better responsive web pages</p>
+                        <button class="normal-btn">LEARN W3.CSS</button>
+                    </li>
+                    <li>
+                        <h2>Color Picker</h2>
+                        <img src="img/colorpicker.png" alt="color picker">
+                    </li>
+                    <li>
+                        <h2>Bootstrap</h2>
+                        <p>A CSS framework for designing better web pages</p>
+                        <button class="normal-btn">LEARN BOOTSTRAP 3</button>
+                        <button class="normal-btn">LEARN BOOTSTRAP 4</button>
+                    </li>
+                </ul>
+
+                <!-- .......... -->
+
+                <ul id="exercises-intro">
+                    <li><h2>Exercises</h2></li>
+                    <li><p>Test yourself with exercises</p></li>
+                    <li>
+                        <div id="three-btns">
+                            <button class="shadow-btn">HTML Exercises</button>
+                            <button class="shadow-btn">CSS Exercises</button>
+                            <button class="shadow-btn">J<span>ava</span>S<span>cript</span> Exercises</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="seven-btns">
+                            <button class="shadow-btn">SQL <span>Exercises</span></button>
+                            <button class="shadow-btn">Python <span>Exercises</span></button>
+                            <button class="shadow-btn">PHP</button>
+                            <button class="shadow-btn">jQuery</button>
+                            <button class="shadow-btn">Java</button>
+                            <button class="shadow-btn">C++</button>
+                            <button class="shadow-btn">C#</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- .......... -->
+
+                <ul id="templates-intro">
+                    <li><h2>Web Templates</h2></li>
+                    <li><p>Browse our selection of <b>free</b> responsive HTML Templates</p></li>
+                    <li><img src="img/templates.jpg" alt="templates"></li>
+                    <li><button class="normal-btn">BROWSE TEMPLATES</button></li>
+                </ul>
+
+                <!-- .......... -->
+
+                <ul id="how-intro">
+                    <li><h2>How To Section</h2></li>
+                    <li><p>Code snippets for HTML, CSS and JavaScript</p></li>
+                    <li>
+                        <div id="how-examples">
+                            <div class="left">
+                                <div class="mini-menu">
+                                    <ul>
+                                        <li>About</li>
+                                        <li>Services</li>
+                                        <li>Clients</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                </div>
+                                <div class="mini-content">
+                                    <h3>Full Sidebar</h3>
+                                    <p>This sidebar is of full height (100%) and always shown.</p>
+                                    <p>Scroll this window to see the "fixed" effect.</p>
+                                    <p>
+                                        Some text to enable scrolling.. Lorem ipsum dolor sit amet,
+                                        illum definitiones no quo, maluisset concludaturque et eum,
+                                        altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                                        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                                    </p>
+                                    <p>
+                                        Some text to enable scrolling.. Lorem ipsum dolor sit amet,
+                                        illum definitiones no quo, maluisset concludaturque et eum,
+                                        altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                                        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="mini-menu">
+                                    <ul>
+                                        <li>About</li>
+                                        <li>Services</li>
+                                        <li>Clients</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                </div>
+                                <div class="mini-content">
+                                    <h3>Auto Sidebar</h3>
+                                    <p>This sidebar is as tall as its content (the links), and is always shown.</p>
+                                    <p>Scroll this window to see the "fixed" effect.</p>
+                                    <p>
+                                        Some text to enable scrolling.. Lorem ipsum dolor sit amet,
+                                        illum definitiones no quo, maluisset concludaturque et eum,
+                                        altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                                        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                                    </p>
+                                    <p>
+                                        Some text to enable scrolling.. Lorem ipsum dolor sit amet,
+                                        illum definitiones no quo, maluisset concludaturque et eum,
+                                        altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+                                        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><button class="normal-btn">LEARN HOW TO</button></li>
+                </ul>
+
+                <!-- .......... -->
+
+                <div id="certificate-intro">
+                    <div>
+                        <img src="img/getcertified.jpg" alt="get certified">
+                        <div>
+                            <h2>Web Certificates</h2>
+                            <p>Get Certified in HTML, CSS and JavaScript</p>
+                        </div>
+                        <button class="shadow-btn">Get Certified <span class="fa fa-angle-double-right"></span></button>
+                    </div>
+                </div>
+
+                <!-- .......... -->
+
+                <ul id="con-end">
+                    <li>
+                        <div class="left">
+                            <button class="normal-btn"><span>WEB</span> CERTIFICATES</button>
+                            <button class="normal-btn">QUIZZES</button>
+                            <button class="normal-btn">EXERCISES</button>
+                        </div>
+                        <div class="right">
+                            <a href="#!">F O R U M &nbsp;</a><span class="v-line"></span><a href="#!">&nbsp; A B O U T</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>W3Schools is optimized for learning, testing, and training.
+                        Examples might be simplified to improve reading and basic understanding.
+                        Tutorials, references, and examples are constantly reviewed to avoid errors.
+                        but we cannot warrant full correctness of all content. While using this site,
+                        you agree to have read and accepted our
+                        <a href="#!">terms of use</a>, <a href="#!">cookie and privacy policy</a>.<br/>
+                        <a href="#!">Copyright 1999-2020</a> by Refsnes Data. All Rights Reserved.</p>
+                    </li>
+                    <li>
+                        <span class="far fa-thumbs-up" title="Like W3Schools on Facebook"></span>
+                    </li>
+                    <li><button class="shadow-btn">W3SCHOOLS SHOP</button></li>
+                </ul>
+
+            </div>
+
+        </div>
+    
+        <script src="js/dark-theme.js"></script>
+        <script src="js/cookies.js"></script>
+        <script src="js/nav-dropdown.js"></script>
+        <script src="js/loginForm-switch.js"></script>
+
+    </body>
+
+</html>

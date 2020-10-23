@@ -1,0 +1,1819 @@
+
+:root {
+
+    --page-shadow: rgba(0, 0, 0, 0.2);
+
+    --page-green: #4CAF50;
+    --page-gray-dark: rgb(97, 94, 94);
+    --page-gray-light: rgb(203, 203, 203);
+    --page-gray-lighter1: rgb(233, 230, 230);
+    --page-gray-lighter2: rgb(241, 241, 241);
+
+    --page-font-arial: Arial, Helvetica, sans-serif;
+    --page-font-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --page-font-verdana: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+
+    margin: 0;
+}
+
+/* ----- icons ----- */
+
+.fas, .fa {
+
+    font-size: 20px;
+}
+
+/* ----- light theme ----- */
+
+.txt-red {
+
+    color: red;
+}
+
+.txt-blue {
+
+    color: blue;
+}
+
+.txt-brown {
+
+    color: brown;
+}
+
+/* ----- dark theme ----- */
+
+.txt-red-dark {
+
+    color: thistle;
+}
+
+.txt-blue-dark {
+
+    color: mediumaquamarine;
+}
+
+.txt-brown-dark {
+
+    color: lightcoral;
+}
+
+/* ----- normal button theme ----- */
+
+.normal-btn {
+
+    border: none;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    padding: 0 15px 0 15px;
+    width: auto;
+    height: 40px;
+    background-color: var(--page-gray-dark);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+}
+
+.normal-btn:hover {
+
+    background-color: var(--page-gray-light);
+    color: black;
+}
+
+/* ----- shadow button theme ----- */
+
+.shadow-btn {
+
+    float: left;
+    border: none;
+    margin-left: 45px;
+    padding: 0 15px 0 15px;
+    height: 40px;
+    background-color: var(--page-green);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.shadow-btn > span {
+
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+.shadow-btn:hover {
+
+    box-shadow: 0px 4px 10px 3px var(--page-shadow);
+}
+
+/* ----- vertical line ----- */
+
+.v-line {
+
+    border-left: 1px solid white;
+    font-size: 10px;
+}
+
+/* ---------- logo and login button above the navigation menu ---------- */
+
+#page-top {
+
+    overflow: hidden;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#page-top > ul {
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#page-top > ul > li > span {
+
+    float: right;
+    transform: scale(1, 1.1);
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: var(--page-font-arial);
+}
+
+#login-btn {
+
+    opacity: 0.65;
+    transform: scale(1, 0.9);
+    border: none;
+    border-radius: 6px;
+    margin: 0 0 5px 20px;
+    padding: 0;    
+    width: 78px;
+    height: 37px;
+    background-color: green;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: var(--page-font-arial);
+    color: white;
+}
+
+#login-btn:hover {
+
+    opacity: 0.75;
+}
+
+#logo {
+
+    float: left;
+    font-size: 40px;
+    font-family: var(--page-font-segoe);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--page-gray-dark);
+}
+
+#logo > span {
+
+    color: var(--page-green);
+}
+
+/* ---------- navigation menu ---------- */
+
+#nav {
+
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#nav > ul {
+
+    display: flex;
+    box-shadow: 0 2px 4px 0 var(--page-shadow), 0 3px 10px 0 var(--page-shadow);
+    margin-top: 0.5%;
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: var(--page-green);
+    list-style-type: none;
+}
+
+#nav > ul > li {
+
+    display: flex;
+    flex-grow: 1;
+    height: 58px;
+    font-size: 15px;
+    font-family: var(--page-font-arial);
+}
+
+#nav > ul > li > a {
+
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--page-green);
+    text-decoration: none;
+    color: white;
+}
+
+#nav > .left {
+
+    float: left;
+    width: 65%;
+}
+
+#nav > .right {
+
+    float: right;
+    padding-left: 22%;
+    width: 13%;
+}
+
+#nav > ul > li > a:hover {
+
+    background-color: white;
+    color: black;
+}
+
+#hidden-menu {
+
+    display: none !important;
+}
+
+#hidden-menu > a > span {
+
+    font-size: 30px !important;
+}
+
+/* ---------- login form ---------- */
+
+#login-form {
+
+    position: absolute;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 var(--page-shadow), 0 3px 10px 0 var(--page-shadow);
+    margin-top: -10px;
+    padding-top: 30px;
+    padding-bottom: 75px;
+    width: 100%;
+    background-color: var(--page-gray-lighter1);
+    font-size: 15px;
+    font-family: var(--page-font-verdana);
+}
+
+#login-form > div > h2 {
+
+    margin-bottom: 0;
+    font-size: 32px;
+    font-family: var(--page-font-segoe);
+    font-weight: normal;
+    text-align: center;
+}
+
+#login-form > div > p > a {
+
+    color: black;
+}
+
+#login-form > div > form {
+
+    overflow: hidden;
+    margin-top: 25px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#login-form > div > form > input {
+
+    border: 1px solid var(--page-gray-light);
+    margin-top: 2px;
+    margin-bottom: 20px;
+    padding: 4px 10px 4px 10px;
+    width: 600px;
+    height: 30px;
+    font-size: 15px; 
+    font-family: var(--page-font-verdana);
+}
+
+#login-form > div > form > button {
+
+    float: right;
+    opacity: 0.65;
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    width: 185px;
+    height: 35px;
+    background-color: green;
+    cursor: pointer;
+    font-size: 15px; 
+    color: white;
+}
+
+#login-form > div > form > button:hover {
+
+    opacity: 0.75;
+}
+
+#login-form > div p:nth-of-type(2) {
+
+    float: right;
+} 
+
+#login-form > div p:nth-of-type(3) {
+
+    float: left;
+}
+
+#close-form {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0px 12px 5px 20px;
+    cursor: pointer;
+}
+
+#close-form > span {
+
+    transform: rotate(45deg);
+    display: inline-block;
+    font-size: 40px;
+    font-family: var(--page-font-segoe);
+}
+
+#close-form:hover {
+
+    background-color: var(--page-gray-light);
+    color: black;
+}
+
+/* ---------- contents for dropdown positions in navigation menu ---------- */
+
+.menu-drpd {
+
+    position: absolute; 
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 var(--page-shadow), 0 3px 10px 0 var(--page-shadow);  
+    margin-top: -10px; 
+    width: 100%;
+    background-color: var(--page-gray-lighter1);
+}
+
+.menu-drpd > ul {
+
+    float: left;
+    padding-bottom: 25px;
+    list-style-type: none;
+    font-size: 17px;
+    line-height: 27px;
+    font-family: var(--page-font-segoe);
+}
+
+.menu-drpd > ul h4 {
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.menu-drpd > ul > li:not(.list-title) {
+
+    cursor: pointer;
+}
+
+.menu-drpd > ul > li:not(.list-title):hover {
+
+    background-color: var(--page-gray-light);
+}
+
+#tutorials-drpd, #references-drpd, #examples-drpd, #exercises-drpd {
+
+    display: none;
+}
+
+/* ---------- content for hidden menu (small screens) position in navigation menu ---------- */
+
+#hidden-menu-drpd {
+
+    position: relative;
+    z-index: 1;
+    display: none;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 var(--page-shadow), 0 3px 10px 0 var(--page-shadow);
+    margin-top: -10px;
+    padding: 60px 0 35px 0;
+    width: 100%;
+    background-color: var(--page-gray-lighter1);
+}
+
+#hidden-menu-drpd > h2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin: 0px 15px 0 15px;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: var(--page-font-segoe);
+    font-weight: normal;
+}
+
+#hidden-menu-drpd > h2:hover {
+
+    background-color: var(--page-gray-light);
+}
+
+#hidden-menu-drpd > div {
+
+    column-count: 2;
+    display: none;
+    margin: 0px 15px 0px 15px;
+    padding: 30px 0 30px 0;
+    background-color: white;
+    text-align: center;
+}
+
+#hidden-menu-drpd > div > ul {
+
+    margin: 0 10px 0 10px;
+    padding: 0;
+    list-style: none;
+    break-inside: avoid;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--page-font-verdana);
+    font-weight: lighter;
+}
+
+#hidden-menu-drpd li:not(.list-title) {
+
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#hidden-menu-drpd li:not(.list-title):hover {
+
+    background-color: var(--page-gray-light);
+}
+
+#hidden-menu-drpd h4 {
+
+    margin: 0;
+    padding: 20px 0 15px 0;
+    cursor: default;
+    font-size: 24px;
+    font-family: var(--page-font-segoe);
+    font-weight: normal;
+}
+
+/* ---------- close buttons in all dropdown positions in navigation menu ---------- */
+
+.close-drpd, #close-menu {
+    
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 0px 12px 5px 20px;
+    cursor: pointer;
+}
+
+.close-drpd > span, #close-menu > span {
+
+    transform: rotate(45deg);
+    display: inline-block;
+    font-size: 40px;
+    font-family: var(--page-font-segoe);
+    font-weight: lighter;
+}
+
+.close-drpd:hover, #close-menu:hover {
+
+    background-color: var(--page-gray-light);
+    color: black;
+}
+
+#close-menu {
+
+    top: 0;
+}
+
+/* ---------- menu left ---------- */
+
+#menu-left {
+
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 2px 4px 0 var(--page-shadow), 0 3px 10px 0 var(--page-shadow);
+    margin-top: -20px;
+    background-color: white;
+}
+
+#menu-left > ul {
+
+    padding: 0;
+    padding-right: 40px;
+    width: 100%;
+    list-style-type: none;
+    font-family: var(--page-font-verdana);
+}
+
+#menu-left > ul h4 {
+
+    margin-top: 10%;
+    margin-bottom: 7%;
+    padding-left: 8%;
+    font-size: 20px;
+    font-family: var(--page-font-segoe);
+    font-weight: normal;
+}
+
+#menu-left > ul > li:not(.list-title) {
+    
+    padding-left: 8%;
+    cursor: pointer;
+    line-height: 23px;
+    white-space: nowrap;
+}
+
+#menu-left > ul > li:not(.list-title):hover {
+
+    background-color: var(--page-gray-light);
+}
+
+/* ---------- main page content ---------- */
+
+#content {
+    
+    z-index: -1;
+    margin-left: 180px;
+    padding-bottom: 130px;
+}
+
+/* -------------------- */
+
+#languages-intro {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    list-style-type: none;
+}
+
+#languages-intro > li {
+
+    padding-top: 35px;
+    padding-bottom: 50px;
+    font-family: var(--page-font-segoe);
+    text-align: center;
+}
+
+#languages-intro > li > h2 {
+
+    margin: 0;
+    padding: 0;
+    font-size: 85px;
+    font-weight: normal;
+}
+
+#languages-intro > .desc {
+
+    padding-left: 15px;
+    color: var(--page-gray-dark);
+}
+
+#languages-intro > .desc > p {
+    
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: var(--page-font-verdana);
+    color: black;
+}
+
+#languages-intro > li > h4, #languages-intro > li > .example:first-child h4 {
+
+    margin: 0;
+    margin-left: 45px;
+    padding: 0;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: left;
+}
+
+#languages-intro > li > .example:first-child h4, #languages-intro > li > .example:first-child button {
+
+    margin-left: 20px;
+}
+
+#languages-intro > li > p.example {
+
+    border-left: 4px solid var(--page-green);
+    box-shadow: 0 2px 8px 2px var(--page-shadow);
+    margin-left: 45px;
+    margin-right: 10px;
+    padding: 10px 0 10px 15px;
+    background-color: white;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+#languages-intro > li > div.example {
+
+    box-shadow: 0 2px 8px 2px var(--page-shadow);
+    margin-left: 25px;
+    margin-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: var(--page-gray-lighter1);
+}
+
+#languages-intro > li > .example > p {
+
+    border-left: 4px solid var(--page-green);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 0 10px 15px;
+    background-color: white;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/* -------------------- */
+
+#programming-intro {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    margin-left: 35px;
+    padding: 40px;
+    background-color: var(--page-gray-dark);
+}
+
+#programming-intro > li {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 35px;
+    padding: 30px 30px 20px 30px;
+    background-color: white;
+    font-family: var(--page-font-segoe);
+}
+
+#programming-intro > li > h2 {
+
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#programming-intro > li > p {
+
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--page-gray-dark);
+}
+
+/* -------------------- */
+
+#frameworks-intro {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 70px 35px 70px 50px;
+}
+
+#frameworks-intro > li {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--page-font-segoe);
+    text-align: center;
+}
+
+#frameworks-intro h2 {
+
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#frameworks-intro p {
+
+    font-size: 20px;
+    color: var(--page-gray-dark);
+}
+
+#frameworks-intro img {
+
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+#frameworks-intro img:hover {
+
+    opacity: 0.6;
+}
+
+/* -------------------- */
+
+#exercises-intro {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--page-gray-dark);
+    list-style-type: none;
+    font-family: var(--page-font-segoe);
+    color: white;
+}
+
+#exercises-intro h2 {
+
+    margin: 0;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+#exercises-intro p {
+
+    font-size: 20px;
+}
+
+#exercises-intro button {
+
+    margin: 8px;
+    margin-bottom: 20px;
+    padding: 0;
+    height: 50px;
+}
+
+#exercises-intro #three-btns {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70vw;
+}
+
+#exercises-intro #three-btns span {
+
+    margin: 0;
+    font-size: 16px;
+}
+
+#exercises-intro #seven-btns {
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 70vw;
+}
+
+#exercises-intro #seven-btns span {
+
+    display: none;
+    margin: 0;
+}
+
+/* -------------------- */
+
+#templates-intro {
+
+    margin: 0;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--page-gray-lighter2);
+    list-style-type: none;
+    font-family: var(--page-font-segoe);
+    text-align: center;
+}
+
+#templates-intro h2 {
+
+    margin: 0;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+#templates-intro p {
+
+    font-size: 20px;
+    color: var(--page-gray-dark);
+}
+
+#templates-intro img {
+
+    margin-bottom: 25px;
+    max-width: 90%;
+    max-height: 90%;
+    cursor: pointer;
+}
+
+/* -------------------- */
+
+#how-intro {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    list-style-type: none;
+    font-family: var(--page-font-segoe);
+}
+
+#how-intro > li > h2 {
+
+    margin: 0;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+#how-intro > li > p {
+
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--page-gray-dark);
+}
+
+#how-intro #how-examples {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 50px 35px 50px;
+    font-family: sans-serif;
+}
+
+#how-intro #how-examples > .left {
+
+    position: relative;
+    border: 5px solid var(--page-gray-light);
+    margin-right: 10px;
+    width: 450px;
+}
+
+#how-intro #how-examples > .right {
+
+    position: relative;
+    border: 5px solid var(--page-gray-light);
+    margin-left: 10px;
+    width: 450px;
+}
+
+#how-intro #how-examples .mini-menu {
+
+    float: left;
+    width: 25%;
+}
+
+#how-intro #how-examples .mini-menu > ul {
+
+    margin: 20px 0 0 20px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#how-intro #how-examples .mini-menu li {
+
+    cursor: pointer;
+}
+
+#how-intro #how-examples .mini-content {
+
+    float: right;
+    overflow-y: scroll;
+    width: 75%;
+    height: 300px;
+}
+
+#how-intro #how-examples p {
+
+    margin-left: 15px;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+#how-intro #how-examples h3 {
+
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+#how-intro #how-examples > .left .mini-menu {
+    
+    position: absolute;
+    height: 100%;
+    background-color: black;
+    color: var(--page-gray-dark);
+}
+
+#how-intro #how-examples > .right .mini-menu > ul {
+
+    margin: 20px 0 0 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    background-color: var(--page-gray-lighter2);
+    color: rgb(33, 150, 243);
+}
+
+#how-intro #how-examples > .left .mini-menu > ul > li:hover {
+
+    color: white;
+}
+
+#how-intro #how-examples > .right .mini-menu > ul > li:hover {
+
+    color: midnightblue;
+}
+
+/* -------------------- */
+
+#certificate-intro {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    padding-left: 50px;
+    background-color: black;
+    cursor: pointer;
+    font-family: var(--page-font-segoe);
+}
+
+#certificate-intro > div {
+
+    position: relative;
+}
+
+#certificate-intro img {
+
+    width: 100%;
+    height: 100%;
+}
+
+#certificate-intro > div > div {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+}
+
+#certificate-intro h2 {
+
+    margin: 30px 0 10px 0;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#certificate-intro p {
+
+    margin: 0;
+    font-size: 25px;
+}
+
+#certificate-intro button {
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 180px;
+    height: 50px;
+}
+
+#certificate-intro button:hover {
+
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+/* -------------------- */
+
+#con-end {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 0 0 40px;
+    padding: 50px 20px 50px 30px;
+    background-color: rgb(97, 97, 97);
+    list-style-type: none;
+    text-align: center;
+}
+
+#con-end .left {
+    
+    float: left;
+    margin-left: 20px;
+}
+
+#con-end .right {
+
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: var(--page-font-segoe);
+}
+
+#con-end .normal-btn {
+
+    margin-bottom: 0;
+    padding: 0 20px 0 20px;
+    background-color: var(--page-gray-lighter2);
+    color: black;
+}
+
+#con-end .normal-btn:hover {
+
+    background-color: var(--page-gray-light);
+}
+
+#con-end .right a {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+#con-end .right a:hover {
+
+    color: var(--page-green);
+}
+
+#con-end p {
+
+    margin-top: 50px;
+    font-size: 15px;
+    line-height: 23px;
+    font-family: var(--page-font-verdana);
+    color: white;
+}
+
+#con-end p > a {
+
+    color: white;
+}
+
+#con-end p > a:hover {
+
+    color: var(--page-green);
+}
+
+#con-end > li > span {
+
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 35px;
+    color: white;
+}
+
+#con-end li:last-child {
+
+    display: flex;
+    justify-content: center;
+}
+
+#con-end .shadow-btn {
+
+    margin: 0;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+}
+
+#con-end .shadow-btn:hover {
+
+    box-shadow: none;
+    background-color: var(--page-gray-light);
+    color: black;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media only screen and (max-width: 1400px) {
+
+    #how-intro #how-examples {
+
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    #nav > .left {
+
+        width: 70%;
+    }
+
+    #nav > .right {
+
+        padding-left: 16%;
+        width: 14%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #nav > .left {
+
+        width: 75%;
+    }
+
+    #nav > .right {
+
+        padding-left: 10%;
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #nav ul:first-child li:nth-child(6) {
+
+        display: none;
+    }
+
+    #nav > .left {
+
+        width: 65%;
+    }
+    
+    #nav > .right {
+
+        padding-left: 19%;
+        width: 16%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #page-top > ul > li > span > span {
+
+        display: none;
+    }
+    
+    #nav ul:first-child li:nth-child(5) {
+
+        display: none;
+    }
+
+    #nav > .left {
+
+        width: 55%;
+    }
+    
+    #nav > .right {
+
+        padding-left: 28%;
+        width: 17%;
+    }
+
+    .menu-drpd {
+
+        grid-template-columns: auto auto;
+    }
+
+    .menu-drpd ul {
+
+        grid-column: 2;
+    }
+
+    .menu-drpd ul:nth-child(1), .menu-drpd ul:nth-child(4) {
+
+        grid-column: 1;
+    }
+
+    .menu-drpd ul:nth-child(1) { grid-row: 1; }
+
+    .menu-drpd ul:nth-child(2) { grid-row: 1; }
+
+    .menu-drpd ul:nth-child(3) { grid-row: 2; }
+
+    .menu-drpd ul:nth-child(4) { grid-row: 2; }
+
+    #languages-intro {
+
+       display: flex;
+       flex-direction: column;
+    }
+
+    #languages-intro > li > div.example {
+
+        margin-right: 15px;
+    }
+
+    #languages-intro > li > p.example {
+
+        margin-right: 35px;
+    }
+
+    #languages-intro #el-1 { order: 1; }
+
+    #languages-intro #el-2 { order: 2; }
+
+    #languages-intro #el-3 { order: 4; }
+
+    #languages-intro #el-4 { order: 3; }
+
+    #languages-intro #el-5 { order: 5; }
+
+    #languages-intro #el-6 { order: 6; }
+
+    #languages-intro #el-7 { order: 8; }
+
+    #languages-intro #el-8 { order: 7; }
+
+    #programming-intro {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #frameworks-intro {
+
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 0;
+    }
+
+    #frameworks-intro li {
+
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    #exercises-intro #seven-btns button:nth-child(1n + 6) {
+
+        display: none;
+    }
+
+    #exercises-intro #seven-btns {
+   
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    #exercises-intro #three-btns span {
+        
+        display: none;
+    }
+
+    #con-end .left {
+
+        float: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+    #con-end .right {
+
+        float: none;
+        margin: 0;
+        margin-right: 0;
+    }
+
+    #con-end .left button span {
+
+        display: none;
+    }
+
+    #con-end .left button {
+
+        margin: 3px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+
+    #nav > .left {
+
+        width: 60%;
+    }
+    
+    #nav > .right {
+
+        padding-left: 22%;
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    #nav > .left {
+
+        width: 65%;
+    }
+    
+    #nav > .right {
+
+        padding-left: 16%;
+        width: 19%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+
+    #nav > .left {
+
+        width: 70%;
+    }
+    
+    #nav > .right {
+
+        padding-left: 10%;
+        width: 20%;
+    }
+
+    #menu-left {
+
+        display: none;
+    }
+
+    #content {
+
+        margin-left: -50px;
+        padding-bottom: 0;
+    }
+
+    #languages-intro h2 {
+
+        font-size: 65px !important;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    
+    #nav > .left > li {
+
+        display: none;
+    }
+
+    #nav > .left {
+
+        width: 8%;
+    }
+
+    #nav > .right {
+
+        padding-left: 71%;
+        width: 21%;
+    }
+
+    #hidden-menu {
+
+        display: flex !important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    #nav > .left {
+
+        width: 9%;
+    }
+
+    #nav > .right {
+
+        padding-left: 69%;
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    #page-top {
+
+        margin-top: 10px;
+    }
+
+    #logo {
+
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    #nav > .left {
+
+        width: 10%;
+    }
+
+    #nav > .right {
+
+        padding-left: 67%;
+        width: 23%;
+    }
+
+    #login-form > div p:nth-of-type(2) {
+
+        float: none;
+        margin-top: 70px;
+        text-align: center;
+    } 
+
+    #login-form > div p:nth-of-type(3) {
+
+        float: none;
+        text-align: center;
+    }
+
+    #login-form > div > form > button {
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        float: none;
+        margin: auto;
+    }
+
+    #login-form > div > form > input {
+
+        width: 550px;
+    }  
+}
+
+@media only screen and (max-width: 670px) {
+
+    #nav > .left {
+
+        width: 11%;
+    }
+
+    #nav > .right {
+
+        padding-left: 65%;
+        width: 24%;
+    }
+
+    #login-form > div > form > input {
+
+        width: 530px;
+    } 
+    
+    #login-form > div > form > button {
+
+        width: 175px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    #nav > .left {
+
+        width: 12%;
+    }
+
+    #nav > .right {
+
+        padding-left: 63%;
+        width: 25%;
+    }
+
+    #login-form > div > form > input {
+
+        width: 480px;
+    } 
+
+    #login-form > div > form > button {
+
+        width: 165px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #nav > .right li:first-child {
+
+        display: none;
+    }
+
+    #nav > .left {
+    
+        width: 13%;
+    }
+    
+    #nav > .right {
+    
+        padding-left: 69%;
+        width: 18%;
+    }
+
+    #login-form > div > form > input {
+
+        width: 460px;
+    } 
+
+    #login-form > div > form > button {
+
+        width: 160px;
+    }
+
+    #hidden-menu-drpd > div {
+
+        column-count: 1;
+    }
+
+    #languages-intro #el-2 { display: none; }
+
+    #languages-intro #el-3 { display: none; }
+
+    #languages-intro #el-6 { display: none; }
+
+    #languages-intro #el-7 { display: none; }
+
+    #languages-intro li {
+
+        padding-top: 10px;
+    }
+
+    #programming-intro {
+
+        padding: 30px;
+    }
+
+    #exercises-intro #seven-btns button:nth-child(1n + 3) {
+
+        display: none;
+    }
+
+    #exercises-intro #seven-btns, #exercises-intro #three-btns {
+
+        grid-template-columns: repeat(1, 1fr);
+        width: 80vw;
+    }
+
+    #exercises-intro #three-btns span {
+
+        display: inline;
+    }
+    
+    #exercises-intro #seven-btns span {
+
+        display: inline;
+        font-size: 16px;
+    }
+
+    #templates-intro button, #how-intro button {
+
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    #nav > .left {
+    
+        width: 14%;
+    }
+    
+    #nav > .right {
+    
+        padding-left: 67%;
+        width: 19%;
+    }
+
+    #login-form > div > form > input {
+
+        width: 440px;
+    } 
+
+    #login-form > div > form > button {
+
+        width: 155px;
+    }
+
+    #programming-intro p {
+
+        text-align: center;
+    }
+
+    #languages-intro p {
+
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+
+    #nav > .left {
+    
+        width: 15%;
+    }
+    
+    #nav > .right {
+    
+        padding-left: 65%;
+        width: 20%;
+    }
+
+    #login-form > div > form > input {
+
+        width: 420px;
+    } 
+
+    #login-form > div > form > button {
+
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    #nav > .left {
+    
+        width: 16%;
+    }
+    
+    #nav > .right {
+    
+        padding-left: 63%;
+        width: 21%;
+    }
+
+    #login-form > div > form > input {
+
+        width: 400px;
+    } 
+
+    #login-form > div > form > button {
+
+        width: 145px;
+    }
+
+    #certificate-intro > div > div {
+
+        height: 100%;
+    }
+    
+    #certificate-intro p {
+
+        font-size: 15px;
+    }
+
+    #certificate-intro h2 {
+
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    #nav > .left {
+    
+        width: 17%;
+    }
+    
+    #nav > .right {
+    
+        padding-left: 61%;
+        width: 22%;
+    }
+
+    #login-form > div > form > input {
+
+        width: 380px;
+    } 
+
+    #login-form > div > form > button {
+
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #nav > .left {
+    
+        width: 18%;
+    }
+    
+    #nav > .right {
+    
+        padding-left: 59%;
+        width: 23%;
+    }
+
+    #login-form > div > form > input {
+
+        width: 360px;
+    } 
+
+    #login-form > div > form > button {
+
+        width: 135px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+
+    #nav > .left {
+    
+        width: 19%;
+    }
+    
+    #nav > .right {
+    
+        padding-left: 51%;
+        width: 30%;
+    }
+
+    #login-form > div > form > input {
+
+        width: 340px;
+    } 
+
+    #login-form > div > form > button {
+
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .fas, .fa {
+
+        font-size: 17px;
+    }
+
+    #hidden-menu > a > span {
+
+        font-size: 25px !important;
+    }
+
+    #login-form > div > form > input {
+
+        width: 260px;
+    } 
+
+    #login-form > div > form > button {
+
+        width: 110px;
+    }
+
+    #templates-intro {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #templates-intro p {
+
+        width: 70vw;
+    }
+}
