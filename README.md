@@ -9,7 +9,7 @@ The homepage clone is fully responsive like the original.<br/>
 Some items may differ from the original ones as I preferred other solutions.
 
 ```css
-I DID THIS PROJECT FOR LEARNING PURPOSES ONLY
+I MADE THIS PROJECT FOR EDUCATIONAL PURPOSES ONLY
 ```
 
 ### Homepage on various devices
